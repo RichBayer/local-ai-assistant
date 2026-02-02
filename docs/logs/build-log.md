@@ -47,6 +47,8 @@ The installer was instead executed locally on the desktop, which completed succe
 Ollama was installed per-user at:
 C:\Users\richb\AppData\Local\Programs\Ollama\ollama.exe
 
+![Ollama CLI installation and version verification](../screenshots/02-ollama-install-version.png)
+
 This location was accepted, as the binary itself is not considered persistent state.
 
 
@@ -78,6 +80,7 @@ Runtime Lifecycle Behavior
 
 The Ollama server was started manually using:
 ollama serve
+![Manual Ollama runtime startup](../screenshots/01-ollama-serve-startup.png)
 
 During early testing, the server appeared to respawn after being terminated.
 Investigation showed that a GUI helper shortcut was configured to auto-start Ollama on login.
@@ -94,6 +97,8 @@ GPU-Backed Inference Verification
 
 With the server running, the model was launched using:
 ollama run llama3.1:8b-instruct-q4_K_M
+
+![Interactive model session via Ollama CLI](../screenshots/03-ollama-run-interactive.png)
 
 GPU usage was monitored with:
 nvidia-smi
