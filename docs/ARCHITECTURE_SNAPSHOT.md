@@ -1,11 +1,20 @@
-# Local AI Assistant - Architecture Snapshot (Design State)
+# Local AI Assistant
 
-This document captures the current architectural intent, constraints,
-and future expansion ideas for the Local AI Assistant project.
+This project documents the design and implementation of a local-first,
+GPU-accelerated personal AI assistant running on consumer hardware.
 
-This file exists as a recovery and continuity anchor.
-It is not intended to be public-facing documentation.
+The system is intentionally designed to favor:
+- explicit state
+- manual control
+- inspectable storage
+- replaceable components
 
+> NOTE:
+> This document captures a point-in-time architectural snapshot created during early implementation.
+> It is retained for historical context and design continuity.
+> Public-facing documentation is provided in README.md and /docs.
+
+The goal is not autonomy, but reliability, predictability, and long-term ownership.
 =====================================================================
 
 1. HOST ENVIRONMENT
